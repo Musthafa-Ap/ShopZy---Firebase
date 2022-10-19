@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        drawer: const DrawerWidget(),
+        drawer: DrawerWidget(),
         appBar: const PreferredSize(
           preferredSize: Size.fromHeight(55),
           child: AppBarWidget(),

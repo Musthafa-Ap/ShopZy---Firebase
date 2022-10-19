@@ -14,9 +14,9 @@ class HeaderSection extends StatelessWidget {
       child: Row(children: [
         Expanded(
           child: Container(
-            color: Colors.white,
             padding: const EdgeInsets.all(8),
             margin: const EdgeInsets.only(left: 10, top: 10, bottom: 10),
+            color: Colors.white,
             child: Row(
               children: [
                 const Text(
