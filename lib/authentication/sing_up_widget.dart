@@ -31,7 +31,7 @@ class _LoginWidgetState extends State<SignUpWidget> {
                 radius: 130,
                 backgroundImage: NetworkImage(
                     "https://thumbs.dreamstime.com/b/fashion-shopping-girl-portrait-yellow-background-fashion-shopping-girl-portrait-yellow-background-shopping-concept-186389830.jpg")),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             TextFormField(
@@ -48,12 +48,13 @@ class _LoginWidgetState extends State<SignUpWidget> {
                     email != null && !EmailValidator.validate(email)
                         ? "Enter a valid email"
                         : null),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             TextFormField(
               controller: _passwordController,
               cursorColor: Colors.black,
+              obscureText: true,
               decoration: InputDecoration(
                   fillColor: Colors.white,
                   filled: true,
@@ -65,10 +66,11 @@ class _LoginWidgetState extends State<SignUpWidget> {
                   ? "Enter min. 6 characters"
                   : null,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             TextFormField(
+              obscureText: true,
               controller: _conformPasswordController,
               cursorColor: Colors.black,
               decoration: InputDecoration(
@@ -83,7 +85,7 @@ class _LoginWidgetState extends State<SignUpWidget> {
                       ? "Password mismatch"
                       : null),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             ElevatedButton(
@@ -104,7 +106,7 @@ class _LoginWidgetState extends State<SignUpWidget> {
                   "Sign Up",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 )),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Center(

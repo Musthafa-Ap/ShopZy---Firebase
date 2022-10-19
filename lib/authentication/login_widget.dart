@@ -59,6 +59,7 @@ class _LoginWidgetState extends State<LoginWidget> {
               height: 10,
             ),
             TextFormField(
+              obscureText: true,
               controller: _passwordController,
               decoration: InputDecoration(
                   fillColor: Colors.white,
